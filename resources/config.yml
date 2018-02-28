@@ -18,13 +18,13 @@
 # List of available colors:
 # black, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray, dark_gray, blue, green, aqua, red, light_purple, yellow, and white.
 color:
-  common: yellow
+  common: gray
   uncommon: blue
   rare: gold
-  mythic: lime_green
+  mythic: dark_purple
 # Enable to use forms (UIs) REQUIRES FormAPI by Jojoe77777
 forms:
-  enabled: false
+  enabled: true
 # Disable to prevent fire from Blaze enchant
 blaze:
   flames: false
