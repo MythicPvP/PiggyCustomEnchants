@@ -21,7 +21,7 @@ color:
   common: yellow
   uncommon: blue
   rare: gold
-  mythic: light_purple
+  mythic: lime_green
 # Enable to use forms (UIs) REQUIRES FormAPI by Jojoe77777
 forms:
   enabled: false
