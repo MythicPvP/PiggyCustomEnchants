@@ -3,7 +3,7 @@ main: PiggyCustomEnchants\Main
 version: 1.1.2
 api: 3.0.0-ALPHA11
 load: POSTWORLD
-author: DaPigGuy
+author: NoOneCaresWhoTheAuthorIs
 permissions:
   piggycustomenchants:
     default: false
