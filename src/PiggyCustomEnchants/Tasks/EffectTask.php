@@ -90,16 +90,16 @@ class EffectTask extends PluginTask
                 $enchantment = $armor->getEnchantment(CustomEnchantsIds::OVERLOAD);
                 if ($enchantment !== null) {
                     if (!isset($this->plugin->overload[$player->getLowerCaseName() . "||" . $slot])) {
-                        $player->setMaxHealth($player->getMaxHealth() + (2 * $enchantment->getLevel()));
-                        $player->setHealth($player->getHealth() + (2 * $enchantment->getLevel()) < $player->getMaxHealth() ? $player->getHealth() + (2 * $enchantment->getLevel()) : $player->getMaxHealth());
+                        $player->setMaxHealth($player->getMaxHealth() + (8 * $enchantment->getLevel()));
+                        $player->setHealth($player->getHealth() + (8 * $enchantment->getLevel()) < $player->getMaxHealth() ? $player->getHealth() + (8 * $enchantment->getLevel()) : $player->getMaxHealth());
                         $this->plugin->overload[$player->getLowerCaseName() . "||" . $slot] = $enchantment->getLevel();
                     }
                 } else {
                     if (isset($this->plugin->overload[$player->getLowerCaseName() . "||" . $slot])) {
                         $level = $this->plugin->overload[$player->getLowerCaseName() . "||" . $slot];
-                        $player->setMaxHealth($player->getMaxHealth() - (2 * $level));
+                        $player->setMaxHealth($player->getMaxHealth() - (8 * $level));
                         if ($player->isAlive()) {
-                            $player->setHealth($player->getHealth() - (2 * $level) < $player->getMaxHealth() ? ($player->getHealth() - (2 * $level) <= 0 ? 1 : $player->getHealth() - (2 * $level)) : $player->getMaxHealth());
+                            $player->setHealth($player->getHealth() - (8 * $level) < $player->getMaxHealth() ? ($player->getHealth() - (8 * $level) <= 0 ? 1 : $player->getHealth() - (8 * $level)) : $player->getMaxHealth());
                         }
                         unset($this->plugin->overload[$player->getLowerCaseName() . "||" . $slot]);
                     }
