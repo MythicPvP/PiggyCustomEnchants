@@ -297,8 +297,8 @@ class Main extends PluginBase
             $this->getLogger()->error("Pig doesn't like spoons. Due to this, the plugin will not function until you are using PMMP.");
             return true;
         }
-        if ($this->getDescription()->getAuthors() !== ["DaPigGuy"] || $this->getDescription()->getName() !== "PiggyCustomEnchants") {
-            $this->getLogger()->error("You are not using the original version of this plugin (PiggyCustomEnchants) by DaPigGuy/MCPEPIG.");
+        if ($this->getDescription()->getAuthors() !== ["NoOneCaresWhoTheAuthorIs"] || $this->getDescription()->getName() !== "PiggyCustomEnchants") {
+            $this->getLogger()->error("Go To Main.php and change the author on line 300 if u want your own name in the pluign.yml go to line 296 and change PocketMine-MP to the name of your server software.");
             return true;
         }
         return false;
